@@ -25,7 +25,7 @@ from textblob import TextBlob
 # ----------------------
 # COLAB: Start Section 1: Import Dataset
 # ----------------------
-data_concat = pd.read_excel('/workspaces/testing-abd-ayam-bang-dava/exported_data.xlsx')  
+data_concat = pd.read_excel('exported_data.xlsx')  
 data_concat['inisial'] = data_concat['inisial'].astype(str)
 # ----------------------
 # COLAB: Convertion to datetime
