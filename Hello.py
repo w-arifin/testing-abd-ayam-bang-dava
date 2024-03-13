@@ -602,7 +602,7 @@ div.row-widget.stRadio > div > label {
 
         with col1:
             today = datetime.datetime.now()
-            jan_1 = datetime.date(2018, 1, 1)
+            jan_1 = datetime.date(2019, 1, 1)
 
             d = st.date_input(
                 "First Date to Last Date: ",
@@ -673,7 +673,7 @@ div.row-widget.stRadio > div > label {
 
         with col1:
             today = datetime.datetime.now()
-            jan_1 = datetime.date(2018, 1, 1)
+            jan_1 = datetime.date(2019, 1, 1)
 
             d = st.date_input(
                 "First Date to Last Date:",
