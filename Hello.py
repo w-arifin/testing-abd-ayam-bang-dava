@@ -1057,7 +1057,7 @@ div.row-widget.stRadio > div > label {
         *Word cloud* kumpulan kata-kata yang disematkan dalam satu wadah yang memuat banyak kata yang sering muncul.
         Frekuensi pada kata sering kali muncul sebagai suatu kata yang mencolok lebih besar. *Word cloud* diatas menunjukkan terdapat kata-kata yang mencolok seperti kata "enak", "ayamnya", "nya", "ga", "yg", dsb.
         
-        Dari [histogram sebelumnya](https://ominous-journey-69vrvrxr54j7c574q-8501.app.github.dev/?vscodeBrowserReqId=1710689961839#kata-terbanyak-dalam-review)
+        Dari [histogram sebelumnya](https://tetris-batch-4-wondy-arifin.streamlit.app/#review-sentiment)
         terdapat kata dan frekuensi yang serupa seperti yang ada di *word cloud* diatas. Dalam bentuk visualisasi, setiap kata
         mendapatkan perbandingannya dengan kata lainnya yang dimuat dan memiliki makna yang jelas. Visualisasi dengan bentuk *word cloud* juga membantu dalam
         pembentukan *first impression* terhadap hasil analisisnya yang relevan dengan topik.
