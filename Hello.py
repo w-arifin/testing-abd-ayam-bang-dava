@@ -803,6 +803,34 @@ div.row-widget.stRadio > div > label {
 
         st.plotly_chart(fig_biplot)
 
+        with st.expander("See explanation:"):
+            st.markdown("""
+                        **Bigram** merupakan pengolahan kalimat yang mengambil dua kata dalam satu kalimat yang sering muncul atau memiliki
+                        frekuensi terbanyak. 
+                            
+                        - ***Node*** = Kata-kata yang sering muncul sebagai titik.
+                            
+                        - ***Line*** = Keterikatan antar kata yang membentuk suatu hubungan dengan garis
+                            """)
+
+        st.markdown("""
+        Grafik bigram ini merupakan kumpulan kata-kata yang banyak disematkan dan
+        seringkali diulang-ulang dan dijadikan garis hubung pada setiap kata ke kata dalam satu kalimat.
+
+        Bigram diatas memiliki percabangan yang menunjukkan setiap kata dapat saling menyambung. 
+        Namun, ada juga kata-kata yang membentuk percabangan sendiri seperti:
+                    
+        *Single-line*:
+        - bang dava, ga sesuai.
+                    
+        *Multi-line*:
+        - :red[**sambal**] matahnya, :red[**sambal**] matah, :red[**sambal**] daun jeruk.
+        - :orange[**ayam**] geprek, :orange[**ayam**] popcorn, :orange[**nasi**] merah, :orange[**nasi**] merahnya, :orange[**nasi**] putih, :orange[**enak**] banget, :orange[**enak**] bgt, :orange[**enak**] rasanya.
+        - nasi :green[**nya**] kurang banyak, sambel :green[**nya**] kurang banyak, ayam :green[**nya**] kurang banyak,
+        ayam :green[**nya**] enak banget, ayam :green[**nya**] enak bgt, ayam :green[**nya**] enak rasanya,
+        sambal :green[**nya**] enak banget, sambal :green[**nya**] enak bgt, sambal :green[**nya**] enak rasanya,
+        nasi :green[**nya**] enak banget, nasi :green[**nya**] enak bgt, nasi :green[**nya**] enak rasanya.
+                    """)
     else:
         regunique_regions = menu_date_region['region'].sort_values().unique()
 
@@ -956,16 +984,27 @@ div.row-widget.stRadio > div > label {
         )
 
         st.plotly_chart(regfig_biplot)
-        
-    st.markdown("""
-Kata-kata yang disematkan pada histogram ini merupakan kumpulan kata-kata yang banyak disematkan dan
-seringkali diulang-ulang.
 
-Pada histogram diatas, terdapat kata-kata yang terbesar adalah kata "enak" sebesar 1150.
-Kata "enak" menunjukkan bahwa beberapa review menyematkan kata enak pada beberapa review.
-Kata "enak" belum tentu memiliki makna baik pada setiap review yang ada seperti menyematkan
-kata-kata negatif seperti kata "tidak", "enggak", "gak", dsb.
-                """)
+        with st.expander("See explanation:"):
+            st.markdown("""
+                        **Bigram** merupakan pengolahan kalimat yang mengambil dua kata dalam satu kalimat yang sering muncul atau memiliki
+                        frekuensi terbanyak. 
+                            
+                        - ***Node*** = Kata-kata yang sering muncul sebagai titik.
+                            
+                        - ***Line*** = Keterikatan antar kata yang membentuk suatu hubungan dengan garis
+                            """)
+
+        st.markdown("""
+        Grafik bigram ini merupakan kumpulan kata-kata yang banyak disematkan dan
+        seringkali diulang-ulang dan dijadikan garis hubung pada setiap kata ke kata dalam satu kalimat.
+
+        Bigram diatas memiliki percabangan yang menunjukkan setiap kata dapat saling menyambung. 
+        Namun, ada juga kata-kata yang membentuk percabangan sendiri karena antar kata tersebut sifatnya mengikat dan
+        tidak sebebas kata-kata lainnya dengan frekuensi hubungan yang tidak besar.
+         
+                    """)
+    
 # ----------------------
 # END OF COLAB IN STREAMLIT 2: Making bigram chart
 # ----------------------
@@ -1002,6 +1041,31 @@ div.row-widget.stRadio > div > label {
         plt.axis("off")
 
         st.pyplot(fig)
+
+        with st.expander("See explanation:"):
+            st.markdown("""
+                        ***Word cloud*** merupakan visualisasi dari banyaknya frekuensi kata-kata yang dituang pada satu wadah
+                        besar yang memuat banyak kata dari yang terbanyak hingga terkecil. 
+                            
+                        Semakin besar ukuran pada suatu kata, maka kata tersebut memiliki frekuensi yang banyak.
+                            
+                        - **Font Besar** > Font Kecil
+                        - **Frekuensi Banyak** > Frekuensi Kecil
+                            """)
+
+        st.markdown("""
+        *Word cloud* kumpulan kata-kata yang disematkan dalam satu wadah yang memuat banyak kata yang sering muncul.
+        Frekuensi pada kata sering kali muncul sebagai suatu kata yang mencolok lebih besar. *Word cloud* diatas menunjukkan terdapat kata-kata yang mencolok seperti kata "enak", "ayamnya", "nya", "ga", "yg", dsb.
+        
+        Dari [histogram sebelumnya](https://ominous-journey-69vrvrxr54j7c574q-8501.app.github.dev/?vscodeBrowserReqId=1710689961839#kata-terbanyak-dalam-review)
+        terdapat kata dan frekuensi yang serupa seperti yang ada di *word cloud* diatas. Dalam bentuk visualisasi, setiap kata
+        mendapatkan perbandingannya dengan kata lainnya yang dimuat dan memiliki makna yang jelas. Visualisasi dengan bentuk *word cloud* juga membantu dalam
+        pembentukan *first impression* terhadap hasil analisisnya yang relevan dengan topik.
+         
+         
+                    """)
+
+
     else:
         regunique_regions2 = menu_date_region['region'].sort_values().unique()
 
@@ -1048,7 +1112,7 @@ div.row-widget.stRadio > div > label {
 
         st.pyplot(regfig2)
 
-    st.markdown("""
+        st.markdown("""
 Kata-kata yang disematkan pada histogram ini merupakan kumpulan kata-kata yang banyak disematkan dan
 seringkali diulang-ulang.
 
