@@ -956,7 +956,8 @@ div.row-widget.stRadio > div > label {
         )
 
         st.plotly_chart(regfig_biplot)
-        st.markdown("""
+        
+    st.markdown("""
 Kata-kata yang disematkan pada histogram ini merupakan kumpulan kata-kata yang banyak disematkan dan
 seringkali diulang-ulang.
 
@@ -964,7 +965,7 @@ Pada histogram diatas, terdapat kata-kata yang terbesar adalah kata "enak" sebes
 Kata "enak" menunjukkan bahwa beberapa review menyematkan kata enak pada beberapa review.
 Kata "enak" belum tentu memiliki makna baik pada setiap review yang ada seperti menyematkan
 kata-kata negatif seperti kata "tidak", "enggak", "gak", dsb.
-                    """)
+                """)
 # ----------------------
 # END OF COLAB IN STREAMLIT 2: Making bigram chart
 # ----------------------
@@ -1047,7 +1048,7 @@ div.row-widget.stRadio > div > label {
 
         st.pyplot(regfig2)
 
-        st.markdown("""
+    st.markdown("""
 Kata-kata yang disematkan pada histogram ini merupakan kumpulan kata-kata yang banyak disematkan dan
 seringkali diulang-ulang.
 
@@ -1055,7 +1056,7 @@ Pada histogram diatas, terdapat kata-kata yang terbesar adalah kata "enak" sebes
 Kata "enak" menunjukkan bahwa beberapa review menyematkan kata enak pada beberapa review.
 Kata "enak" belum tentu memiliki makna baik pada setiap review yang ada seperti menyematkan
 kata-kata negatif seperti kata "tidak", "enggak", "gak", dsb.
-                    """)
+                """)
         
 # ----------------------
 # END OF COLAB IN STREAMLIT 3: Making Word Cloud
