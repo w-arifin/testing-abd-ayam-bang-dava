@@ -515,7 +515,7 @@ Sebanyak 28 *outlet* ABD yang tersebar di kawasan Pulau Jawa, data yang berhasil
 satu kolom **lokasi** sebagai pembeda untuk masing-masing *outlet*.
 
 """)
-    st.image("https://raw.githubusercontent.com/w-arifin/testing-abd-ayam-bang-dava/main/image/sampel_review.png", 
+    st.image("https://raw.githubusercontent.com/w-arifin/testing-abd-ayam-bang-dava/main/image/sample_review.png", 
              caption="Salah satu contoh review dari ABD outlet Pasar Minggu", use_column_width=True, output_format='auto')
 
     st.markdown("""
