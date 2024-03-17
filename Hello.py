@@ -416,7 +416,7 @@ def one_word(text):
 
 st.set_page_config(
     page_title="Analisis Kepuasan Konsumen Franchise ABD (Ayam Bang Dava)",
-    page_icon="/workspaces/tetris-batch-4/image_2024-03-08_155100554-modified.png",
+    page_icon="https://raw.githubusercontent.com/w-arifin/testing-abd-ayam-bang-dava/main/image/image_2024-03-08_155100554-modified.png",
     layout="centered"
 )
 
@@ -515,7 +515,7 @@ Sebanyak 28 *outlet* ABD yang tersebar di kawasan Pulau Jawa, data yang berhasil
 satu kolom **lokasi** sebagai pembeda untuk masing-masing *outlet*.
 
 """)
-    st.image("https://media.discordapp.net/attachments/593140987170390016/1213345865817784380/image.png?ex=65f52365&is=65e2ae65&hm=cfc49466181c8949a711cd36724e54439f079a57634c904e03ef5c67550f25df&=&format=webp", 
+    st.image("https://raw.githubusercontent.com/w-arifin/testing-abd-ayam-bang-dava/main/image/sampel_review.png", 
              caption="Salah satu contoh review dari ABD outlet Pasar Minggu", use_column_width=True, output_format='auto')
 
     st.markdown("""
