@@ -1295,8 +1295,10 @@ tersebut menghasilkan beberapa poin yang dapat disimpulkan sebagai berikut:
 pada masing-masing *outlet* sebagai sarana pengembangan bisnis B2C yang mendapatkan respon berupa
 *feedback* dari *product*-nya antara lain *compliment* berupa masukan positif maupun kritik dan saran untuk memperbaiki kualitas
 dalam *product development* setiap *outlet*nya.
+
 2. Sebagian besar *review* yang didapatkan dari keseluruhan cabang berupa *review* positif.
 *review* positif disini ditunjukkan dari analisis sentimen yang sebagian besar polanya berada di condong positif.
+
 3. Pengaruh *review* terhadap penjualan berada pada trend penjualan yang semakin hari bertambah terus seiring dengan
 berjalannya waktu dan pembukaan *outlet-outlet* barunya. Hal ini menambahkan performa penjualan diatas rata-rata.
 Dengan kolom review yang terbuka, *customer* dapat meyakinkan *customer* lainnya jika dalam suatu menu
