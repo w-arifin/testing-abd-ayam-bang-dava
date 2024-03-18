@@ -1057,7 +1057,7 @@ div.row-widget.stRadio > div > label {
         *Word cloud* kumpulan kata-kata yang disematkan dalam satu wadah yang memuat banyak kata yang sering muncul.
         Frekuensi pada kata sering kali muncul sebagai suatu kata yang mencolok lebih besar. *Word cloud* diatas menunjukkan terdapat kata-kata yang mencolok seperti kata "enak", "ayamnya", "nya", "ga", "yg", dsb.
         
-        Dari [histogram sebelumnya](https://tetris-batch-4-wondy-arifin.streamlit.app/~/+/#word-cloud-pada-review)
+        Dari [histogram sebelumnya](https://ominous-journey-69vrvrxr54j7c574q-8501.app.github.dev/?vscodeBrowserReqId=1710689961839#kata-terbanyak-dalam-review)
         terdapat kata dan frekuensi yang serupa seperti yang ada di *word cloud* diatas. Dalam bentuk visualisasi, setiap kata
         mendapatkan perbandingannya dengan kata lainnya yang dimuat dan memiliki makna yang jelas. Visualisasi dengan bentuk *word cloud* juga membantu dalam
         pembentukan *first impression* terhadap hasil analisisnya yang relevan dengan topik.
@@ -1128,10 +1128,10 @@ div.row-widget.stRadio > div > label {
         Frekuensi pada kata sering kali muncul sebagai suatu kata yang mencolok lebih besar dari yang lainnya. Dari *word cloud*
         diatas di dominasi oleh kata "enak", "nya", dan "yg".
                     
-        Pada setiap *outlet* yang dipilih pastinya terdapat perbedaan di *outlet* lainnya mengakibatkan hasil dari *word cloud*-pun
-        juga ikut berubah. Sajian *word cloud* juga dapat berupa gabungan dari banyaknya *outlet* dengan kesamaan dari asal kabupaten *outlet* tersebut,
-        *outlet* terfavorit, *outlet* terbaru, dsb.
-                  
+        Pada setiap tempat yang dipilih pastinya terdapat perbedaan setiap *outlet*-nya mengakibatkan hasil dari *word cloud*-pun
+        juga ikut berubah.
+         
+         
                     """)
         
 # ----------------------
@@ -1171,6 +1171,28 @@ div.row-widget.stRadio > div > label {
         sentiment_df_nozero.hist(column="polarity", bins=8, range=(-1,1), ax=ax)
         plt.title("Sentiments from Reviews", weight="bold")
         st.pyplot(figsent)
+        
+        with st.expander("See explanation:"):
+            st.markdown("""
+                        ***Sentimental Analysis*** atau analisis merupakan visualisasi dari banyaknya frekuensi kata-kata yang dituang pada satu wadah
+                        besar yang memuat banyak kata dari yang terbanyak hingga terkecil. 
+                            
+                        Semakin besar ukuran pada suatu kata, maka kata tersebut memiliki frekuensi yang banyak.
+                            
+                        - **Font Besar** > Font Kecil
+                        - **Frekuensi Banyak** > Frekuensi Kecil
+                            """)
+
+        st.markdown("""
+        *Word cloud* kumpulan kata-kata yang disematkan dalam satu wadah yang memuat banyak kata yang sering muncul.
+        Frekuensi pada kata sering kali muncul sebagai suatu kata yang mencolok lebih besar dari yang lainnya. Dari *word cloud*
+        diatas di dominasi oleh kata "enak", "nya", dan "yg".
+                    
+        Pada setiap tempat yang dipilih pastinya terdapat perbedaan setiap *outlet*-nya mengakibatkan hasil dari *word cloud*-pun
+        juga ikut berubah.
+         
+         
+                    """)
     
     else:
 
@@ -1221,13 +1243,6 @@ div.row-widget.stRadio > div > label {
         regsentiment_df_nozero.hist(column="polarity", bins=8, range=(-1,1), ax=ax)
         plt.title("Sentiments from Reviews", weight="bold")
         st.pyplot(regfigsent)
-    
-    with st.expander("Details:"):
-        st.markdown("""
-Pada Analisis Sentimen diatas, menunjukkan bahwa grafik lebih besar pada value 0.25 hingga 0.50.
-Sebagian besar berada pada polarity dengan besaran polarity > 0 yang menunjukkan sebagian besar
-menunjukkan review yang positif.
-                    """)
 
     st.divider()
     st.header("Kesimpulan")
