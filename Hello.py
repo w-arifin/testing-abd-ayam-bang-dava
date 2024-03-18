@@ -1128,10 +1128,10 @@ div.row-widget.stRadio > div > label {
         Frekuensi pada kata sering kali muncul sebagai suatu kata yang mencolok lebih besar dari yang lainnya. Dari *word cloud*
         diatas di dominasi oleh kata "enak", "nya", dan "yg".
                     
-        Pada setiap tempat yang dipilih pastinya terdapat perbedaan setiap *outlet*-nya mengakibatkan hasil dari *word cloud*-pun
-        juga ikut berubah.
-         
-         
+        Pada setiap *outlet* yang dipilih pastinya terdapat perbedaan di *outlet* lainnya mengakibatkan hasil dari *word cloud*-pun
+        juga ikut berubah. Sajian *word cloud* juga dapat berupa gabungan dari banyaknya *outlet* dengan kesamaan dari asal kabupaten *outlet* tersebut,
+        *outlet* terfavorit, *outlet* terbaru, dsb.
+                  
                     """)
         
 # ----------------------
