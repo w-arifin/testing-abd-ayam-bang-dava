@@ -1288,26 +1288,26 @@ div.row-widget.stRadio > div > label {
     st.divider()
     st.header("Kesimpulan")
     st.markdown("""
-Berdasarkan dari sebuah data trend penjualan dan sentimental analysis, hasil analisis
+Berdasarkan dari sebuah data trend penjualan dan analisis sentimen, hasil analisis
 tersebut menghasilkan beberapa poin yang dapat disimpulkan sebagai berikut:
                 
-1. Kolom review berpengaruh pada performa penjualan. Penjualan mempengaruhi performa
-pada masing-masing outlet sebagai sarana pengembangan bisnis B2C yang mendapatkan respon berupa
-feedback dari product-nya antara lain compliment berupa masukan positif maupun kritik untuk memperbaiki kualitas
-dalam product development setiap outletnya.
-2. Sebagian besar review yang didapatkan dari keseluruhan cabang berupa review positif.
-review positif disini ditunjukkan dari analisis sentiment yang sebagian besar polanya berada di condong positif.
-3. Pengaruh review terhadap penjualan berada pada trend penjualan yang semakin hari bertambah terus seiring dengan
-berjalannya waktu dan pembukaan outlet-outlet barunya. Hal ini menambahkan performa penjualan diatas rata-rata.
-Dengan kolom review yang terbuka, customer dapat meyakinkan customer lainnya jika dalam suatu menu
-diberikan rating dan review yang masuk akal dan meyakinkan.
+1. Kolom *review* berpengaruh pada performa penjualan. Penjualan mempengaruhi performa
+pada masing-masing *outlet* sebagai sarana pengembangan bisnis B2C yang mendapatkan respon berupa
+*feedback* dari *product*-nya antara lain *compliment* berupa masukan positif maupun kritik dan saran untuk memperbaiki kualitas
+dalam *product development* setiap *outlet*nya.
+2. Sebagian besar *review* yang didapatkan dari keseluruhan cabang berupa *review* positif.
+*review* positif disini ditunjukkan dari analisis sentimen yang sebagian besar polanya berada di condong positif.
+3. Pengaruh *review* terhadap penjualan berada pada trend penjualan yang semakin hari bertambah terus seiring dengan
+berjalannya waktu dan pembukaan *outlet-outlet* barunya. Hal ini menambahkan performa penjualan diatas rata-rata.
+Dengan kolom review yang terbuka, *customer* dapat meyakinkan *customer* lainnya jika dalam suatu menu
+diberikan *rating* dan *review* yang masuk akal dan meyakinkan.
                 """)
 
     st.header("Saran")
     st.markdown("""
-Pentingnya menjaga customer relationship dan hospitality-nya kepada customer baik saat
+Pentingnya menjaga *customer relationship* dan *hospitality*-nya kepada *customer* baik saat
 menerima pesanan dan pelayanannya. Beberapa menu andalan seharusnya bisa dijaga lebih baik lagi
-dan menghindari adanya kelalaian yang berakibat reputasi outlet yang dipesannya bisa menurun. Selain itu, untuk menjaga
-relasi kepada customer loyal, ABD harus siap untuk membuat menu limited-edition dan marketing 
-agar bisa memancing customer untuk tidak berpikir panjang dalam pada pembelian.                
+dan menghindari adanya kelalaian yang berakibat reputasi *outlet* yang dipesannya bisa menurun. Selain itu, untuk menjaga
+relasi kepada *customer* loyal, **ABD** harus siap untuk membuat menu *limited-edition* dan *marketing* 
+agar bisa memancing *customer* untuk tidak berpikir panjang dalam pada pembelian dan memicu *repeat order*.                
                 """)
