@@ -1112,15 +1112,27 @@ div.row-widget.stRadio > div > label {
 
         st.pyplot(regfig2)
 
-        st.markdown("""
-Kata-kata yang disematkan pada histogram ini merupakan kumpulan kata-kata yang banyak disematkan dan
-seringkali diulang-ulang.
+        with st.expander("See explanation:"):
+            st.markdown("""
+                        ***Word cloud*** merupakan visualisasi dari banyaknya frekuensi kata-kata yang dituang pada satu wadah
+                        besar yang memuat banyak kata dari yang terbanyak hingga terkecil. 
+                            
+                        Semakin besar ukuran pada suatu kata, maka kata tersebut memiliki frekuensi yang banyak.
+                            
+                        - **Font Besar** > Font Kecil
+                        - **Frekuensi Banyak** > Frekuensi Kecil
+                            """)
 
-Pada histogram diatas, terdapat kata-kata yang terbesar adalah kata "enak" sebesar 1150.
-Kata "enak" menunjukkan bahwa beberapa review menyematkan kata enak pada beberapa review.
-Kata "enak" belum tentu memiliki makna baik pada setiap review yang ada seperti menyematkan
-kata-kata negatif seperti kata "tidak", "enggak", "gak", dsb.
-                """)
+        st.markdown("""
+        *Word cloud* kumpulan kata-kata yang disematkan dalam satu wadah yang memuat banyak kata yang sering muncul.
+        Frekuensi pada kata sering kali muncul sebagai suatu kata yang mencolok lebih besar dari yang lainnya. Dari *word cloud*
+        diatas di dominasi oleh kata "enak", "nya", dan "yg".
+                    
+        Pada setiap tempat yang dipilih pastinya terdapat perbedaan setiap *outlet*-nya mengakibatkan hasil dari *word cloud*-pun
+        juga ikut berubah.
+         
+         
+                    """)
         
 # ----------------------
 # END OF COLAB IN STREAMLIT 3: Making Word Cloud
