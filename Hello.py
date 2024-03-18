@@ -1183,23 +1183,6 @@ div.row-widget.stRadio > div > label {
                         - 0 < ***polarity*** < :green[**1**] = teks mengandung *polarity* positif
                         - 0 > ***polarity*** > :red[**-1**] = teks mengandung *polarity* negatif
                             """)
-        
-        rata_rata_sentiment = sentiment_df_nozero['polarity'].mean()
-        rata_sentiment_adj = "{:.3f}".format(rata_rata_sentiment)
-        modus_sentiment = sentiment_df_nozero['polarity'].mode()
-        modus_polarity_string = ', '.join(map(str, modus_sentiment))
-
-        st.markdown(f"""
-        ***Sentimental Analysis*** umumnya menggunakan visualisasi histogram dengan menunjukkan bagaimana suatu kalimat atau teks dapat diolah
-        dan dapat diketahui *polarity* yang menentukan apakah teks tersebut memiliki makna positif atau memiliki makna negatif.
-        Melalui perbandingan antara nilai positif dan nilai negatif dalam histogram akan mudah mengetahui keseluruhan sebuah *review* berdasarkan
-        teks di kolom *review*.
-         
-        Pada visualisasi histogram diatas, ditemukan frekuensi terbanyak pada rentang :green[**0.25**] hingga :green[**0.50**] lebih unggul di
-        bagian *polarity* positif. Terdapat rata-rata *polarity* yaitu :green[**{rata_sentiment_adj}**] dan modus *polarity* yaitu :green[**{modus_polarity_string}**]. 
-        
-        Dalam rata-rata, *polarity* yang dibangun dari teks *review* memiliki makna positif berisikan *feedback* positif, saran positif, dan reaksi positif terhadap pesanannya oleh *customer*.
-                    """)
     
     else:
 
@@ -1262,25 +1245,6 @@ div.row-widget.stRadio > div > label {
                         - 0 < ***polarity*** < :green[**1**] = teks mengandung *polarity* positif
                         - 0 > ***polarity*** > :red[**-1**] = teks mengandung *polarity* negatif
                             """)
-        
-        regrata_rata_sentiment = regsentiment_df_nozero['polarity'].mean()
-        regrata_sentiment_adj = "{:.3f}".format(regrata_rata_sentiment)
-        regmodus_sentiment = regsentiment_df_nozero['polarity'].mode()
-        regmodus_polarity_string = ', '.join(map(str, regmodus_sentiment))
-
-        st.markdown(f"""
-        ***Sentimental Analysis*** umumnya menggunakan visualisasi histogram dengan menunjukkan bagaimana suatu kalimat atau teks dapat diolah
-        dan dapat diketahui *polarity* yang menentukan apakah teks tersebut memiliki makna positif atau memiliki makna negatif.
-        Melalui perbandingan antara nilai positif dan nilai negatif dalam histogram akan mudah mengetahui keseluruhan sebuah *review* berdasarkan
-        teks di kolom *review*.
-
-        Visualisasi pada *outlet-outlet* yang terpilih akan memiliki perbedaan setiap *outlet*-nya mengakibatkan hasil dari histogram tersebut
-        juga ikut berubah. Dari *outlet* yang terpilih terdapat frekuensi terbanyak pada rentang :green[**0.25**] hingga :green[**0.50**] lebih unggul di
-        bagian *polarity* positif dengan nilai *polarity*-nya yaitu :green[**{regmodus_polarity_string}**]. 
-        
-        Dengan rata-rata *polarity* yaitu :green[**{regrata_sentiment_adj}**] memungkinkan bahwa *polarity* yang dibangun dari teks *review* memiliki 
-        makna positif berisikan *feedback* positif, saran positif, dan reaksi positif terhadap pesanannya oleh *customer*.
-                    """)
 # ----------------------
 # END OF COLAB IN STREAMLIT 4: Making Text Blob Sentiment Analysis
 # ----------------------
