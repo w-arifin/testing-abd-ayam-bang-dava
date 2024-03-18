@@ -1174,24 +1174,31 @@ div.row-widget.stRadio > div > label {
         
         with st.expander("See explanation:"):
             st.markdown("""
-                        ***Sentimental Analysis*** atau analisis merupakan visualisasi dari banyaknya frekuensi kata-kata yang dituang pada satu wadah
-                        besar yang memuat banyak kata dari yang terbanyak hingga terkecil. 
+                        ***Sentimental Analysis*** atau analisis sentimen merupakan teknik analisis pada suatu kalimat untuk menilai
+                        suatu kalimat apakah mengandung sebuah reaksi atau emosi baik itu positif atau negatif dalam pembandingan *polarity*. 
                             
-                        Semakin besar ukuran pada suatu kata, maka kata tersebut memiliki frekuensi yang banyak.
+                        *Polarity* merupakan pembandingan secara mutlak antara :green[nilai positif] dengan :red[nilai negatif]
+                        pada suatu teks.
                             
-                        - **Font Besar** > Font Kecil
-                        - **Frekuensi Banyak** > Frekuensi Kecil
+                        - 0 < ***polarity*** < :green[**1**] = teks mengandung *polarity* positif
+                        - 0 > ***polarity*** > :red[**-1**] = teks mengandung *polarity* negatif
                             """)
+        
+        rata_rata_sentiment = sentiment_df_nozero['polarity'].mean()
+        rata_sentiment_adj = "{:.3f}".format(rata_rata_sentiment)
+        modus_sentiment = sentiment_df_nozero['polarity'].mode()
+        modus_polarity_string = ', '.join(map(str, modus_sentiment))
 
-        st.markdown("""
-        *Word cloud* kumpulan kata-kata yang disematkan dalam satu wadah yang memuat banyak kata yang sering muncul.
-        Frekuensi pada kata sering kali muncul sebagai suatu kata yang mencolok lebih besar dari yang lainnya. Dari *word cloud*
-        diatas di dominasi oleh kata "enak", "nya", dan "yg".
-                    
-        Pada setiap tempat yang dipilih pastinya terdapat perbedaan setiap *outlet*-nya mengakibatkan hasil dari *word cloud*-pun
-        juga ikut berubah.
+        st.markdown(f"""
+        ***Sentimental Analysis*** umumnya menggunakan visualisasi histogram dengan menunjukkan bagaimana suatu kalimat atau teks dapat diolah
+        dan dapat diketahui *polarity* yang menentukan apakah teks tersebut memiliki makna positif atau memiliki makna negatif.
+        Melalui perbandingan antara nilai positif dan nilai negatif dalam histogram akan mudah mengetahui keseluruhan sebuah *review* berdasarkan
+        teks di kolom *review*.
          
-         
+        Pada visualisasi histogram diatas, ditemukan frekuensi terbanyak pada rentang :green[**0.25**] hingga :green[**0.50**] lebih unggul di
+        bagian *polarity* positif. Terdapat rata-rata *polarity* yaitu :green[**{rata_sentiment_adj}**] dan modus *polarity* yaitu :green[**{modus_polarity_string}**]. 
+        
+        Dalam rata-rata, *polarity* yang dibangun dari teks *review* memiliki makna positif berisikan *feedback* positif, saran positif, dan reaksi positif terhadap pesanannya oleh *customer*.
                     """)
     
     else:
@@ -1243,6 +1250,40 @@ div.row-widget.stRadio > div > label {
         regsentiment_df_nozero.hist(column="polarity", bins=8, range=(-1,1), ax=ax)
         plt.title("Sentiments from Reviews", weight="bold")
         st.pyplot(regfigsent)
+
+        with st.expander("See explanation:"):
+            st.markdown("""
+                        ***Sentimental Analysis*** atau analisis sentimen merupakan teknik analisis pada suatu kalimat untuk menilai
+                        suatu kalimat apakah mengandung sebuah reaksi atau emosi baik itu positif atau negatif dalam pembandingan *polarity*. 
+                            
+                        *Polarity* merupakan pembandingan secara mutlak antara :green[nilai positif] dengan :red[nilai negatif]
+                        pada suatu teks.
+                            
+                        - 0 < ***polarity*** < :green[**1**] = teks mengandung *polarity* positif
+                        - 0 > ***polarity*** > :red[**-1**] = teks mengandung *polarity* negatif
+                            """)
+        
+        regrata_rata_sentiment = regsentiment_df_nozero['polarity'].mean()
+        regrata_sentiment_adj = "{:.3f}".format(regrata_rata_sentiment)
+        regmodus_sentiment = regsentiment_df_nozero['polarity'].mode()
+        regmodus_polarity_string = ', '.join(map(str, regmodus_sentiment))
+
+        st.markdown(f"""
+        ***Sentimental Analysis*** umumnya menggunakan visualisasi histogram dengan menunjukkan bagaimana suatu kalimat atau teks dapat diolah
+        dan dapat diketahui *polarity* yang menentukan apakah teks tersebut memiliki makna positif atau memiliki makna negatif.
+        Melalui perbandingan antara nilai positif dan nilai negatif dalam histogram akan mudah mengetahui keseluruhan sebuah *review* berdasarkan
+        teks di kolom *review*.
+
+        Visualisasi pada *outlet-outlet* yang terpilih akan memiliki perbedaan setiap *outlet*-nya mengakibatkan hasil dari histogram tersebut
+        juga ikut berubah. Dari *outlet* yang terpilih terdapat frekuensi terbanyak pada rentang :green[**0.25**] hingga :green[**0.50**] lebih unggul di
+        bagian *polarity* positif dengan nilai *polarity*-nya yaitu :green[**{regmodus_polarity_string}**]. 
+        
+        Dengan rata-rata *polarity* yaitu :green[**{regrata_sentiment_adj}**] memungkinkan bahwa *polarity* yang dibangun dari teks *review* memiliki 
+        makna positif berisikan *feedback* positif, saran positif, dan reaksi positif terhadap pesanannya oleh *customer*.
+                    """)
+# ----------------------
+# END OF COLAB IN STREAMLIT 4: Making Text Blob Sentiment Analysis
+# ----------------------
 
     st.divider()
     st.header("Kesimpulan")
