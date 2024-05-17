@@ -424,8 +424,8 @@ st.title("Analisis Kepuasan Konsumen Franchise ABD (Ayam Bang Dava)")
 st.write("Wondy Arifin || Member of TETRIS Batch IV from DQLAB")
 
 tab1, tab2, tab3 = st.tabs(["Home", "Dataset", "Analisis"])
-with tab1:
 
+with tab1:
     st.markdown("""
 ### Latar Belakang
 **ABD** kepanjangan dari **Ayam Bang Dava** merupakan salah satu
