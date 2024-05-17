@@ -46,7 +46,7 @@ Sastrawi
 setuptools
 six
 smmap
-streamlit
+streamlit==1.33.0
 tenacity
 textblob
 toml
